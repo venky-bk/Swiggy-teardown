@@ -1,16 +1,15 @@
-# Illustrative analysis scripts
+# Reproducible analysis
 
-This folder contains lightweight Python scripts that demonstrate product funnel and unit-economics calculations with clearly labelled illustrative inputs. They do not use Swiggy internal data.
+These scripts demonstrate methods using synthetic/example inputs. They do not use Swiggy internal data and must not be described as actual Swiggy performance.
 
 ## Requirements
-
-Python 3.9+; scripts use the standard library only.
+Python 3.9+; standard library only.
 
 ## Run
-
 ```bash
 python analysis/unit_economics.py
 python analysis/funnel_analysis.py
 ```
 
-Check the source comments and output before adapting the formulas to real data. Replace illustrative inputs with an appropriately governed dataset and validate definitions with stakeholders.
+## Replace example inputs responsibly
+Use approved aggregate event data, document definitions, validate joins and denominators, and remove personally identifiable information. Do not commit raw customer-level records.

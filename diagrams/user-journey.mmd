@@ -1,0 +1,14 @@
+flowchart TD
+    A[Need or meal occasion] --> B[Discover: search or category]
+    B --> C[Compare menu, total cost and ETA]
+    C --> D{Confident choice?}
+    D -- No --> B
+    D -- Yes --> E[Cart and checkout validation]
+    E --> F{Price and availability valid?}
+    F -- No --> C
+    F -- Yes --> G[Order confirmed]
+    G --> H[Restaurant preparation and delivery]
+    H --> I{Delivered successfully?}
+    I -- Yes --> J[Feedback and repeat]
+    I -- No --> K[Clear recovery and support]
+    K --> J

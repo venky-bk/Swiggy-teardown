@@ -1,0 +1,13 @@
+flowchart LR
+    U[Consumer app / conversational surface] --> O[Product orchestration API]
+    O --> P[Price and checkout source of truth]
+    O --> E[ETA estimation service]
+    O --> M[Menu and attribute service]
+    O --> S[Order state and recovery service]
+    O --> UI[Validated Meal Confidence response]
+    UI --> U
+    U --> X[Privacy-minimised event collector]
+    X --> A[Analytics and experiment platform]
+    A --> D[Product KPI dashboard]
+    AI[Optional AI summarisation / intent parsing] --> O
+    AI -. Cannot invent price, availability or status .-> UI
